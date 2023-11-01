@@ -3,6 +3,7 @@
 
 ## Team Members:
 - April Nellis
+- Boyang Wu
 - Preetham Mohan
 - Shirlyn Wang
 - Tejaswi Tripathi
