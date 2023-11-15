@@ -4,7 +4,7 @@
 - File Name: all_inputs_cleaned.csv
 - Number of columns (features): 15 (excluding Month)
 - Number of rows (data points): 204
-	- Monthly Data from June 2006 to September 2023 (inclusive)
+	- Monthly data from June 2006 to September 2023 (inclusive)
 
 ## Features
 
@@ -18,12 +18,12 @@ All data is in (percent (%) change)/100. For instance, 20% is expressed as 0.2.
 7. CommercialLoan: Commercial and Industrial Loans ([source](https://fred.stlouisfed.org/series/H8B1023NCBCMG)) (SA: Y)
 8. ConsumerLoan: Consumer Loans ([source](https://fred.stlouisfed.org/series/H8B1029NCBCMG)) (SA: Y)
 9. Deficit: Federal Surplus or Deficit ([source](https://fred.stlouisfed.org/series/MTSDS133FMS)) (SA: N)
-10. ITBPrice: iShares US Home Construction ETF (ITB) ([source](https://finance.yahoo.com/quote/ITB/history/)) (SA: N)
-11. ITBVol: ([source](https://finance.yahoo.com/quote/ITB/history/)) (SA: N)
-12. VGTPrice: Vanguard Information Technology Index Fund ETF (VGT) ([source](https://finance.yahoo.com/quote/VGT/history/)) (SA: N)
-13. VGTVol: ([source](https://finance.yahoo.com/quote/VGT/history/)) (SA: N)
-14. S&P500Price: ([source](https://finance.yahoo.com/quote/%5EGSPC/history)) (SA: N)
-15. S&P500Vol: ([source](https://finance.yahoo.com/quote/%5EGSPC/history)) (SA: N)
+10. ITBPrice: iShares US Home Construction ETF (ITB) price ([source](https://finance.yahoo.com/quote/ITB/history/)) (SA: N)
+11. ITBVol: ITB volume of trade ([source](https://finance.yahoo.com/quote/ITB/history/)) (SA: N)
+12. VGTPrice: Vanguard Information Technology Index Fund ETF (VGT) price ([source](https://finance.yahoo.com/quote/VGT/history/)) (SA: N)
+13. VGTVol: VGT volume of trade ([source](https://finance.yahoo.com/quote/VGT/history/)) (SA: N)
+14. S&P500Price: Standard and Poor's 500 (S&P 500) price ([source](https://finance.yahoo.com/quote/%5EGSPC/history)) (SA: N)
+15. S&P500Vol: S&P 500 volume of trade ([source](https://finance.yahoo.com/quote/%5EGSPC/history)) (SA: N)
 
 
 ## Output Data
