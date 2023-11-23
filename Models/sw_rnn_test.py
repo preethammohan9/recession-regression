@@ -9,7 +9,7 @@ device = 'cpu'
 
 df = pd.read_csv('../Data/Raw/USTotalPrivate.csv')
 df['DATE'] = pd.to_datetime(df['DATE'])
-df = df[(df['DATE'] < '2020-04-01') | (df['DATE'] > '2020-08-01')  ]
+# df = df[(df['DATE'] < '2020-04-01') | (df['DATE'] > '2020-08-01')  ]
 df_diff = df.diff(axis = 0)
 df_diff['DATE'] = df['DATE']
 df_diff
@@ -103,15 +103,11 @@ class RNN(nn.Module):
         h0 = torch.zeros(self.num_layers, x.size(0), self.hidden_size).to(device) 
         #c0 = torch.zeros(self.num_layers, x.size(0), self.hidden_size).to(device) 
         
-        # x: (n, 28, 28), h0: (2, n, 128)
-        
         # Forward propagate RNN
         out, _ = self.rnn(x, h0)  
-        # or:
-        #out, _ = self.lstm(x, (h0,c0))  
+        # or: out, _ = self.lstm(x, (h0,c0))  
         
         # out: tensor of shape (batch_size, seq_length, hidden_size)
-        # out: (n, 28, 128)
         
         # Decode the hidden state of the last time step
         out = out[:, -1, :]
@@ -136,6 +132,7 @@ optimizer = torch.optim.SGD(model.parameters(), lr=learning_rate)
 
 all_train_loss= []
 all_test_loss = []
+
 def train_one_epoch():
     model.train(True)
     if epoch % 10 == 9:
