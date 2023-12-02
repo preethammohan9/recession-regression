@@ -28,6 +28,8 @@ We first tried classification on 2006-onward percentage change data, which worke
 
 Meanwhile, we also used regression to not only predict future employment outlook, but also estimate the magnitude of changes in employment over time. We trained a variety of models on the original 2006-onwards data and found that XGBoost produced the best results with an R2 score of 0.6296, compared to a baseline (linear regression) R2 score of 0.179.  
 
+![](/Plots/XGBoostvsTotalPrivate.png)
+
 This is good for our KPIs because we have effectively explained a large majority of the variation in employment change and are able to accurately predict employment outlook with near-perfect accuracy. This will help policymakers and investors make well-informed decisions.  
 
 
