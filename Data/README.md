@@ -1,14 +1,12 @@
-# Data Documentation
+## Data Documentation
 
-## Input Data
+**Input Data (2006 onwards)**
 - File Name: all_inputs_cleaned.csv
 - Number of columns (features): 15 (excluding Month)
 - Number of rows (data points): 204
 	- Monthly data from June 2006 to September 2023 (inclusive)
 
-## Features
-
-All data is in (percent (%) change)/100. For instance, 20% is expressed as 0.2.
+<u>Features:</u> All data is in (percent (%) change)/100. For instance, 20% is expressed as 0.2.
 1. CPI: Consumer Price Index ([source](https://fred.stlouisfed.org/series/CPIAUCSL)) (Seasonally Adjusted (SA): Yes (Y))
 2. InterestRate: Effective Federal Funds Rate (EFFR) ([source](https://fred.stlouisfed.org/series/FEDFUNDS)) (SA: N)
 3. GDP: Gross Domestic Product ([source](https://fred.stlouisfed.org/series/GDP)) (SA: Y)
@@ -26,15 +24,40 @@ All data is in (percent (%) change)/100. For instance, 20% is expressed as 0.2.
 15. S&P500Vol: S&P 500 volume of trade ([source](https://finance.yahoo.com/quote/%5EGSPC/history)) (SA: N)
 
 
-## Output Data
+**Output Data (2006 onwards)**
 - File Name: all_outputs_cleaned.csv
 - Number of columns: 3 (excluding Month)
 - Number of rows: 204
-
-## Outputs
 
 The outputs are for employment by sector. All data is in (percent (%) change)/100. Data is not adjusted for seasonality.
 
 1. Construction
 2. Information
-3. Total_Private: Private Sector
+3. Total_Private: Private Sector (Primary)
+
+**Input Data (1960 onwards)**
+- File Name: Input_features_1960_no_covid.csv
+- Number of columns: 5 (excluding Month)
+- Number of rows (data points): 761
+	- Monthly data from January 1960 to September 2023 (inclusive)
+
+<u>Features:</u> All data is in (percent (%) change)/100, unless otherwise noted.
+1. Fedfund_rate: Effective Federal Funds Rate (EFFR) ([source](https://fred.stlouisfed.org/series/FEDFUNDS)) (SA: N)
+2. GDP_pch: Gross Domestic Product ([source](https://fred.stlouisfed.org/series/GDP)) (SA: Y)
+3. CPI_pc1: Consumer Price Index ([source](https://fred.stlouisfed.org/series/CPIAUCSL)) (SA: Y)
+	- Percent change from year ago
+4. Loan_pch: ConsumerLoan: Consumer Loans ([source](https://fred.stlouisfed.org/series/H8B1029NCBCMG)) (SA: Y)
+	- Percent change at annual rate
+5. House_ch: New Housing Units ([source](https://fred.stlouisfed.org/series/HOUST#0))
+	- Change from year ago (in thousands of units)
+
+**Output Data (1960 onwards)**
+- File Name: Employment_pch_1960_no_covid.csv
+- Number of columns: 2 (excluding Month)
+- Number of rows (data points): 761
+	- Monthly data from January 1960 to September 2023 (inclusive)
+
+The outputs are for employment by sector. All data is in (percent (%) change)/100. Data is not adjusted for seasonality.
+
+1. Total_Private_pch: Private Sector (Primary)
+2. Construction_pch
